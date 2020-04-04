@@ -28,7 +28,7 @@ componentDidMount(){
 
           <div className="App">
             <input type= 'search' placeholder= "Search Monsters" 
-            onChange= {e => this.setState({searchField: e.target.value}, () => console.log(this.state))} /> <br></br>
+            onChange= {e => this.setState({searchField: e.target.value}, () => console.log(this.state))} />
             <CardList monsters={filteredMonsters} > 
             {
             
