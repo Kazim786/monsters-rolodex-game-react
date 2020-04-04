@@ -18,17 +18,14 @@ componentDidMount(){
 
   
 }
-
-
-
-
   render(){
     return(
 
           <div className="App">
-            <CardList name= "Kazim" > 
+            <input type= 'search' placeholder= "Search Monsters" />
+            <CardList monsters={this.state.monsters} > 
             {
-            this.state.monsters.map(monsters => <h1 key= {monsters.id}> {monsters.name}</h1> )
+            
             }
             </CardList>
             
