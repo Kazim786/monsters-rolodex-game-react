@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import { CardList } from './components/card-list/card-list.component';
-
+import SearchBox from '/Users/apple/ZTM-REACT/my-app/src/components/card-list/search-box/search-box.component.jsx'
 
 class App extends Component{
   constructor(){
@@ -27,8 +27,11 @@ componentDidMount(){
     return(
 
           <div className="App">
-            <input type= 'search' placeholder= "Search Monsters" 
-            onChange= {e => this.setState({searchField: e.target.value}, () => console.log(this.state))} />
+            
+            <SearchBox placeholder= 'search monsters' 
+            handleChange= {e => this.setState({searchField: e.target.value})}
+            />
+
             <CardList monsters={filteredMonsters} > 
             {
             
