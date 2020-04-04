@@ -23,7 +23,7 @@ componentDidMount(){
     const { monsters, searchField } = this.state;
     const filteredMonsters = monsters.filter(monster => 
       monster.name.toLowerCase().includes(searchField.toLowerCase())
-      )
+      ) //this will filter monsters that are not included in the searchField
     return(
 
           <div className="App">
